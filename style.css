@@ -1,0 +1,46 @@
+body {
+  background-color: black;
+}
+
+.container {
+  display: grid;
+  position: relative;
+}
+
+.one { 
+  width: 100px; 
+  height: 70px;
+  animation: changing-colors 2.1s infinite;
+}
+
+.two { 
+  width: 100px; 
+  height: 70px; 
+  animation: moving-colors 2s infinite;
+}
+
+@keyframes moving-colors {
+  0% {
+    left: 0;
+    background: blue;
+  }
+  100% {
+    left: 100%;
+    background: red;
+  }
+}
+
+@keyframes changing-colors {
+    0% {
+      left: 0;
+      background: aqua;
+    }
+    50% {
+        left: 50%;
+        background: black;
+      }
+    100% {
+      left: 100%;
+      background: green;
+    }
+}
